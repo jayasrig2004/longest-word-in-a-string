@@ -1,0 +1,15 @@
+def find_longest_word(input_string):
+    # Split the input string into words
+    words = input_string.split()
+    
+   
+    longest_word = ""
+    max_length = 0
+    
+    
+    for word in words:
+        # Check the length of the current word
+        if len(word) > max_length:
+            max_length = len(word)
+            longest_word = word
+            return longest_word
